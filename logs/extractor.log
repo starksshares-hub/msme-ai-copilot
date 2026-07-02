@@ -1,0 +1,24 @@
+2026-07-02 16:55:45,884 - ERROR - Invoice extraction failed: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+Traceback (most recent call last):
+  File "t:\msme-ai-copilot\backend\document_processing\extractor.py", line 50, in extract_invoice_data
+    response = ollama.chat(
+        model="llama3.2",
+    ...<13 lines>...
+        }
+    )
+  File "T:\msme-ai-copilot\.venv\Lib\site-packages\ollama\_client.py", line 387, in chat
+    return self._request(
+           ~~~~~~~~~~~~~^
+      ChatResponse,
+      ^^^^^^^^^^^^^
+    ...<14 lines>...
+      stream=stream,
+      ^^^^^^^^^^^^^^
+    )
+    ^
+  File "T:\msme-ai-copilot\.venv\Lib\site-packages\ollama\_client.py", line 199, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "T:\msme-ai-copilot\.venv\Lib\site-packages\ollama\_client.py", line 145, in _request_raw
+    raise ConnectionError(CONNECTION_ERROR_MESSAGE) from None
+ConnectionError: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
