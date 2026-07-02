@@ -1,0 +1,14 @@
+.venv/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+
+# Databases/cache
+*.db
+*.sqlite
+chroma_db/

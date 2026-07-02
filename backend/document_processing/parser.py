@@ -55,7 +55,7 @@ def parse_document(file_path: str) -> str:
     elif file_extension == ".txt":
         return extract_text_from_txt(file_path)
 
-    elif file_extension == ".md":
+    elif file_extension in {".md", ".markdown"}:
         return extract_text_from_markdown(file_path)
 
     else:
