@@ -19,7 +19,7 @@ class InvoiceSchema(BaseModel):
     tax: float = 0.0
     total_amount: float = 0.0
 
-    line_items: list[LineItem] = Field(default_factory=list) # this means that if no line items are provided, it will default to an empty list
+    line_items: list[LineItem] = Field(default_factory=list)
 
     payment_terms: str = ""
     confidence_score: float = 0.0
