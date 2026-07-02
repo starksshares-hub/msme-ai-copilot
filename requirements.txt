@@ -1,0 +1,9 @@
+langchain
+llama-index
+streamlit
+fastapi[standard]
+chromadb
+faiss-cpu
+pandas
+numpy
+scikit-learn
